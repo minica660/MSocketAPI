@@ -1,13 +1,12 @@
 plugins {
     id("java-library")
-    id("com.gradleup.shadow") version "9.6.1"
     id("xyz.jpenilla.run-paper") version "3.1.0"
     id("maven-publish")
 
 }
 
 group = "com.github.minica660"
-version = "1.2"
+version = "1.2.1"
 
 publishing {
     publications {
@@ -17,12 +16,12 @@ publishing {
     }
 }
 
-repositories {
-    mavenCentral()
-    maven("https://repo.papermc.io/repository/maven-public/")
-    maven { url = uri("https://jitpack.io") }
-
-}
+//repositories {
+//    mavenCentral()
+//    maven("https://repo.papermc.io/repository/maven-public/")
+//    maven { url = uri("https://jitpack.io") }
+//
+//}
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
@@ -30,7 +29,7 @@ dependencies {
 }
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
 }
 
 tasks.withType<JavaCompile>().configureEach {
