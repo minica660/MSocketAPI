@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.github.minica660"
-version = "1.2.5"
+version = "1.2.6-pre4"
 
 publishing {
     publications {
