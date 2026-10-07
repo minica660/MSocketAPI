@@ -1,0 +1,8 @@
+設定のGradleで実行方法をIntellJ IDEA から Gradleに変更する
+
+ビルドと実行
+ビルド及び実行に使用という箇所
+
+
+build.gradle.ktsとsettings.gradle.ktsはMSocketAPIプロジェクトからgradleや
+gradle.batなどはルートから
